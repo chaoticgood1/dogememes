@@ -40,23 +40,7 @@ function Header() {
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          {/* <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} /> */}
-          <CardMedia
-            component="img"
-            src="icon.jpg"
-            id="icon"
-          />
-          <Typography
-            variant="h6"
-            component="a"
-            href="#app-bar-with-responsive-menu"
-            sx={{ display: { xs: 'none', md: 'flex' } }}
-            id="logo"
-          >
-            StoicMemes
-          </Typography>
-
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+          <Box sx={{ flexGrow: 0, display: { xs: 'flex', lg: 'none' } }}>
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -92,27 +76,23 @@ function Header() {
               ))}
             </Menu>
           </Box>
-          <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
+
+          <CardMedia
+            component="img"
+            src="icon.jpg"
+            id="icon"
+          />
           <Typography
-            variant="h5"
-            noWrap
+            variant="h6"
             component="a"
             href="#app-bar-with-responsive-menu"
-            sx={{ display: { xs: 'flex', md: 'none' } }}
-            id="logo-mobile"
+            sx={{ display: { xs: 'none', sm: 'flex' } }}
+            id="logo"
           >
             StoicMemes
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-            {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
-              >
-                {page}
-              </Button>
-            ))}
+
+          <Box sx={{ flexGrow: 1 }}>
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
