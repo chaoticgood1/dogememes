@@ -3,6 +3,8 @@ import Layout from './tsx/layout.tsx';
 import Home from './tsx/home.tsx';
 import Portfolio from './tsx/portfolio.tsx';
 import About from './tsx/about.tsx';
+import Ironverse from './tsx/ironverse.tsx';
+
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -14,6 +16,8 @@ function App() {
           <Route path="portfolio" element={<Portfolio />} />
           <Route path="about" element={<About />} />
         </Route>
+
+        <Route path="ironverse" element={<Ironverse />} />
       </Routes>
     </BrowserRouter>
   );
