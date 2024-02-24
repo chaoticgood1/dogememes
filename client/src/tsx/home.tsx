@@ -1,6 +1,10 @@
 
 
 export default function Home() {
-  return <img id="banner" src="banner.jpg"/>;
+  return (
+    <div>
+      <img id="banner" src="banner.jpg"/>
+    </div>
+  );
 }
 
