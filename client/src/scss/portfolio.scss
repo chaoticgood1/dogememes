@@ -1,0 +1,32 @@
+.entry-dot {
+  position: absolute;
+  top: 0px;
+  left: -8px;
+  width: 10px;
+  height: 10px;
+  border-radius: 7px;
+  background-color: #cfcfcf;
+  border: 2px solid white;
+}
+
+.timeline {
+  margin: 0px 15px;
+}
+
+.timeline-block {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.time {
+  display: grid;
+  grid-template-rows: auto;
+  width: 190px;
+}
+
+.divider {
+  grid-column: span 1;
+  vertical-align: top;
+  border-left: 2px solid #cfcfcf;
+  position: relative;
+}

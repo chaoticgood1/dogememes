@@ -1,26 +1,30 @@
 
 
 export default function Portfolio() {
-  return <div>
-    <section>
-      Sept 2020 - Oct 2023
-      3D Game Dev
-
-      <section>
+  return <div className='timeline'>
+    <div className="timeline-block">
+      
+      <div className='time'>
+        <span>Sept 2020 - Oct 2023</span>
+        <span>3D Game Dev</span>
+      </div>
+      <div className="divider">
+        <div className="entry-dot"></div>
+      </div>
+      <div>
         Programming language: Rust
         Tools: Bevy Engine, WASM, Cargo, PostgreSQL, WGSL
-      </section>
-
-
+      </div>
+      
 
       {/* 
         Show demo about ironverse
         Discuss about the technologies and tools being used
         What I have learned  
       */}
-    </section>
+    </div>
     <hr></hr>
-    <div>
+    <div className="timeline-block">
       April 2017 - Sept 2020
       Web Dev
       Katanatechworks Inc.
