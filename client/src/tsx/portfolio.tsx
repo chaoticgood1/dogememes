@@ -15,9 +15,10 @@ export default function Portfolio() {
         <div>
           <a href="https://stoicmemes.com/ironverse">Ironverse</a>
         </div>
-        Have built lots of proprietary prototypes, the link above is the only open-source we created using WASM
+        Have built lots of proprietary prototypes, the link above is the only open-source we created using WASM.
         <br></br>
-        Programming language: Rust, Javascript, HTML
+        Programming languages: Rust, Javascript, HTML
+        <br></br>
         Tools: Bevy Engine, WASM, Cargo, PostgreSQL, WGSL, Tokio, Multithreading, Game Physics, Voxel, Shader
       </div>
     </div>
@@ -39,7 +40,8 @@ export default function Portfolio() {
         </div>
         I learned a lot here about web development.
         <br></br>
-        Programming language: PHP, Javascript, CSS, HTML, JQuery
+        Programming languages: PHP, Javascript, CSS, HTML, JQuery
+        <br></br>
         Tools: MySQL/MariaDB, Wordpress, Magento 2, Postman, Laravel, Git, Cypress, Visual Studio Code, Ubuntu, Windows 7/10, GitExtension, Google Analytics
       </div>
     </div>
@@ -54,17 +56,18 @@ export default function Portfolio() {
         <div className="entry-dot"></div>
       </div>
       <div className="description">
-        We worked with CBTL and CWC
+        We worked with CBTL and CWC.
         <br></br>
-        Programming language: Java, CSS, HTML
+        Programming languages: Java, CSS, HTML
+        <br></br>
         Tools: JEJB, Struts, MySQL, JSP, iReport, Apache Ant
       </div>
     </div>
 
     <div className="timeline-block">
       <div className='time'>
-        <span>April 2017 - Sept 2020</span>
-        <a href="https://www.katanatechworks.com/">Katana Techworks Inc.</a>
+        <span>Sept 2014 - July 2016</span>
+        <a href="https://ph.indeed.com/cmp/Indigo-Entertainment">Indigo.Entertainment Phils. Inc.</a>
         <span>Web Dev</span>
       </div>
       <div className="divider">
@@ -79,9 +82,10 @@ export default function Portfolio() {
           , <a href="https://www.numuki.com/game/fop-wishing-101/">Fairly Odd Parents</a>
           , <a href="https://www.numuki.com/game/pgbc-game-lad-blitz/">PGBC Game Lad Blitz</a>
         </div>
-        I started my career as a Game Developer
+        I started my career as a Game Developer, we worked for Cartoon Network and Nickelodeon.
         <br></br>
-        Programming language: Haxe, Java
+        Programming languages: Haxe, Java
+        <br></br>
         Tools: HTML, Flash, Flambe, OpenFl, Mercurial, FlashDevelop 5
       </div>
     </div>

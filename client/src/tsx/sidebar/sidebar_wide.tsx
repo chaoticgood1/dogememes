@@ -19,6 +19,9 @@ export default function InteractiveList() {
       minWidth: 300,
       maxWidth: 300,
       paddingTop: 0,
+      borderRight: '1px solid white',
+      height: '100vh',
+      marginRight: 5,
     }}>
       <List sx={{
         padding: 0,
