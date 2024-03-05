@@ -4,6 +4,7 @@ import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import { Link } from "react-router-dom";
+import { ListItemText } from '@mui/material';
 
 const paths = {
   'Home': '/', 
@@ -12,7 +13,7 @@ const paths = {
 };
 
 const Demo = styled('div')(({ theme }) => ({
-  backgroundColor: theme.palette.background.paper,
+  // backgroundColor: theme.palette.background.paper,
 }));
 
 export default function InteractiveList() {
@@ -27,9 +28,14 @@ export default function InteractiveList() {
         <List>
           {Object.entries(paths).map(([key, value]) => (
             <ListItem key={key} disablePadding>
-              <ListItemButton>
-                
-                <Link to={value}>{key}</Link>
+              <ListItemButton
+                key={key}
+                component={Link}
+                to={value}
+              >
+                <ListItemText>
+                  {key}
+                </ListItemText>
               </ListItemButton>
             </ListItem>
           ))}
