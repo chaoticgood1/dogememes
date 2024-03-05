@@ -9,7 +9,7 @@ export default function Body() {
   return (
     <Box sx={{
       display: 'flex',
-      flexDirection: 'row',
+      flexDirection: { xs: 'column', lg: 'row'},
     }}>
       <SideBar />
       <SideBarWide />
