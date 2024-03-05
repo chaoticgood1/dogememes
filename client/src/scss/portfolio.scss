@@ -16,11 +16,13 @@
 .timeline-block {
   display: grid;
   grid-template-columns: auto auto auto;
+  margin-top: 40px;
+  text-align: left;
 }
 
 .time {
   display: grid;
-  grid-template-rows: auto;
+  grid-template-rows: min-content min-content;
   width: 190px;
 }
 
@@ -29,4 +31,8 @@
   vertical-align: top;
   border-left: 2px solid #cfcfcf;
   position: relative;
+}
+
+.description {
+  padding: 0px 50px;
 }
