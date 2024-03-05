@@ -23,24 +23,25 @@ export default function InteractiveList() {
       flexGrow: 1, 
       minWidth: 300,
       maxWidth: 300,
+      paddingTop: 0,
     }}>
-      <Demo>
-        <List>
-          {Object.entries(paths).map(([key, value]) => (
-            <ListItem key={key} disablePadding>
-              <ListItemButton
-                key={key}
-                component={Link}
-                to={value}
-              >
-                <ListItemText>
-                  {key}
-                </ListItemText>
-              </ListItemButton>
-            </ListItem>
-          ))}
-        </List>
-      </Demo>
+      <List sx={{
+        padding: 0,
+      }}>
+        {Object.entries(paths).map(([key, value]) => (
+          <ListItem key={key} disablePadding>
+            <ListItemButton
+              key={key}
+              component={Link}
+              to={value}
+            >
+              <ListItemText>
+                {key}
+              </ListItemText>
+            </ListItemButton>
+          </ListItem>
+        ))}
+      </List>
     </Box>
   );
 }

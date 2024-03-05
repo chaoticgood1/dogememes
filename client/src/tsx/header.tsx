@@ -35,7 +35,13 @@ function Header() {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar 
+      position="static"
+      style={{
+        background: "transparent",
+        marginBottom: "20px"
+      }}
+    >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Box sx={{ flexGrow: 0, display: { xs: 'flex', lg: 'none' } }}>
@@ -60,7 +66,7 @@ function Header() {
           <Typography
             variant="h6"
             component="a"
-            href="#app-bar-with-responsive-menu"
+            href="/"
             sx={{ display: { xs: 'none', sm: 'flex' } }}
             id="logo"
           >

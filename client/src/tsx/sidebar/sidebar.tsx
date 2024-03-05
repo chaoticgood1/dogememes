@@ -7,6 +7,7 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 
 import { Link } from "react-router-dom";
+import { ListItemText } from '@mui/material';
 
 type Anchor = 'top' | 'left' | 'bottom' | 'right';
 
@@ -41,7 +42,9 @@ export default function SideBar() {
 
   const list = (anchor: Anchor) => (
     <Box
-      sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250 }}
+      sx={{ 
+        width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250,
+      }}
       role="presentation"
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
@@ -49,9 +52,20 @@ export default function SideBar() {
       <List>
         {Object.entries(paths).map(([key, value]) => (
           <ListItem key={key} disablePadding>
-            <ListItemButton>
+            {/* <ListItemButton>
               
               <Link to={value}>{key}</Link>
+            </ListItemButton> */}
+            <ListItemButton
+              key={key}
+              component={Link}
+              to={value}
+            >
+              <ListItemText sx={{
+                color: "#FFFFFF"
+              }}>
+                {key}
+              </ListItemText>
             </ListItemButton>
           </ListItem>
         ))}
@@ -77,7 +91,8 @@ export default function SideBar() {
                 top: {
                   xs: 65,
                   sm: 73,
-                }
+                },
+                backgroundColor: "#242424",
               }
             }}
           >
