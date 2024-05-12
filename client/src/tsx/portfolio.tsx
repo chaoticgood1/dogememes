@@ -4,6 +4,26 @@ export default function Portfolio() {
   return <div className='timeline'>
     <div className="timeline-block">
       <div className='time'>
+        <span>March 2024 - Present</span>
+        <a href="https://globalx.com.ph/">GlobalX PH</a>
+        <span>Full Stack Web/Game Developer</span>
+      </div>
+      <div className="divider">
+        <div className="entry-dot"></div>
+      </div>
+      <div className="description">
+        <div>
+          Construction in progress...
+        </div>
+        <br></br>
+        Programming languages: Typescript
+        <br></br>
+        Tools: NodeJS, Fastify, ws WebSocket, ReactJS, MUI, Zustand, PlayWright, Jest, Grafana
+      </div>
+    </div>
+
+    <div className="timeline-block">
+      <div className='time'>
         <span>Sept 2020 - Oct 2023</span>
         <a href="https://github.com/gamedevalice">GameDevAlice</a>
         <span>3D Game Dev</span>
@@ -17,7 +37,7 @@ export default function Portfolio() {
         </div>
         Have built lots of proprietary prototypes, the link above is the only open-source we created using WASM.
         <br></br>
-        Programming languages: Rust, Javascript, HTML
+        Programming languages: Rust, Javascript
         <br></br>
         Tools: Bevy Engine, WASM, Cargo, PostgreSQL, WGSL, Tokio, Multithreading, Game Physics, Voxel, Shader
       </div>
@@ -40,7 +60,7 @@ export default function Portfolio() {
         </div>
         I learned a lot here about web development.
         <br></br>
-        Programming languages: PHP, Javascript, CSS, HTML, JQuery
+        Programming languages: PHP, Javascript
         <br></br>
         Tools: MySQL/MariaDB, Wordpress, Magento 2, Postman, Laravel, Git, Cypress, Visual Studio Code, Ubuntu, Windows 7/10, GitExtension, Google Analytics
       </div>
@@ -58,7 +78,7 @@ export default function Portfolio() {
       <div className="description">
         We worked with CBTL and CWC.
         <br></br>
-        Programming languages: Java, CSS, HTML
+        Programming languages: Java
         <br></br>
         Tools: JEJB, Struts, MySQL, JSP, iReport, Apache Ant
       </div>
@@ -86,7 +106,7 @@ export default function Portfolio() {
         <br></br>
         Programming languages: Haxe, Java
         <br></br>
-        Tools: HTML, Flash, Flambe, OpenFl, Mercurial, FlashDevelop 5
+        Tools: Flash, Flambe, OpenFl, Mercurial, FlashDevelop 5
       </div>
     </div>
 
