@@ -1,0 +1,33 @@
+
+.timeline {
+  display: grid;
+  grid-template-columns: 190px 0 auto;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.divider {
+  grid-column: span 1;
+  vertical-align: top;
+  border-left: 2px solid #cfcfcf;
+  position: relative;
+}
+
+.entryDot {
+  position: absolute;
+  top: 0px;
+  left: -8px;
+  width: 10px;
+  height: 10px;
+  border-radius: 7px;
+  background-color: #cfcfcf;
+  border: 2px solid white;
+}
+
+.description {
+  padding: 0px 50px;
+}
+
+.list {
+  flex: 1;
+}

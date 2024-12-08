@@ -1,11 +1,11 @@
 import './App.scss'
 import Layout from './tsx/layout.tsx';
 import Home from './tsx/home.tsx';
-import Portfolio from './tsx/portfolio.tsx';
 import About from './tsx/about.tsx';
 import Ironverse from './tsx/ironverse.tsx';
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Portfolio from './tsx/portfolio/portfolio.tsx';
 
 function App() {
   return (

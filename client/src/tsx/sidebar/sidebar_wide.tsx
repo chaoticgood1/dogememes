@@ -16,8 +16,8 @@ export default function InteractiveList() {
     <Box sx={{
       display: { xs: 'none', lg: 'block'}, 
       flexGrow: 1, 
-      minWidth: 300,
-      maxWidth: 300,
+      minWidth: 150,
+      maxWidth: 150,
       paddingTop: 0,
       borderRight: '1px solid white',
       height: '100vh',
