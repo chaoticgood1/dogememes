@@ -1,5 +1,19 @@
+import React, { useEffect } from 'react';
 
+const Ironverse = () => {
 
-export default function Ironverse() {
-  return <div>Ironverse</div>;
-}
+  useEffect(() => {
+    const canvas = document.querySelector("canvas");
+    if (canvas) {
+      canvas.style.display = "block"
+    }
+    
+  }, []);
+
+  return (
+    <div>
+    </div>
+  );
+};
+
+export default Ironverse;

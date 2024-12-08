@@ -1,6 +1,10 @@
-
+import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 export default function Portfolio() {
+  const navigate = useNavigate()
+
+
   return <div className='timeline'>
     <div className="timeline-block">
       <div className='time'>
@@ -33,7 +37,7 @@ export default function Portfolio() {
       </div>
       <div className="description">
         <div>
-          <a href="https://stoicmemes.com/ironverse">Ironverse</a>
+          <a href="/ironverse">Ironverse</a>
         </div>
         Have built lots of proprietary prototypes, the link above is the only open-source we created using WASM.
         <br></br>
