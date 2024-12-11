@@ -1,13 +1,7 @@
-import { Box, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material';
-import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
-import styles from "./Index.module.scss";
-import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
+import React from 'react';
 import Descriptions from './descriptions';
 
 export default function Portfolio() {
-  const navigate = useNavigate()
-
 
   return <div className='timeline'>
     <IamTech />
