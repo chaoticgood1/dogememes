@@ -31,10 +31,7 @@ const IamTech: React.FC = () => {
   ])
   
   const summaries = [
-    "Online betting boat race",
-    "Online betting horse race",
-    "Online betting for color game",
-    "Created an EKYC prototype to validate players",
+    "Create online betting games and eKYC"
   ]
   const common = [
     "Typescript", "Jest", "Supertest"
@@ -43,7 +40,7 @@ const IamTech: React.FC = () => {
     "NodeJS", "Fastify", "Uecs", "SigePay", "MySQL", "SQLite", "PostgreSQL",
   ]
   const frontend = [
-    "ReactJS", "Mui", "Uecs", "Zustand", "Phaser"
+    "ReactJS", "Mui", "Zustand", "Phaser"
   ]
   return (
     <Descriptions

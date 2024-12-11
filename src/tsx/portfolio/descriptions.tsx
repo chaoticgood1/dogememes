@@ -37,7 +37,7 @@ const Descriptions: React.FC<Props> = ({
 
           <List>
             <Typography>
-              Summaries:
+              Summary:
             </Typography>
             {summaries.map((tech, index) => (
               <ListItem key={index} sx={{ padding: "0px", }}>

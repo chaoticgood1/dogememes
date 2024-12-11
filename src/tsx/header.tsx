@@ -70,7 +70,7 @@ function Header() {
             sx={{ display: { xs: 'none', sm: 'flex' } }}
             id="logo"
           >
-            StoicMemes
+            Doge Memes
           </Typography>
 
           <Box sx={{ flexGrow: 1 }}>
