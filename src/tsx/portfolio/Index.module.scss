@@ -28,6 +28,47 @@
   padding: 0px 50px;
 }
 
+.descHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.descHeader > * {
+  flex: 1;
+}
+
 .list {
   flex: 1;
+}
+
+.company {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.projects {
+  width: 210px;
+  min-width: 210px;
+  padding: 0px !important;
+}
+
+@media (max-width: 767px) {
+  .timeline {
+    grid-template-columns: none;
+
+    .entryDot {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .description {
+    padding: 0px 0px;
+  }
+
+  .projects {
+    width: unset;
+    min-width: unset;
+  }
 }

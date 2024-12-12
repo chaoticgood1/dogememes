@@ -19,7 +19,7 @@ export default function Portfolio() {
 const BodyHeader: React.FC = () => {
   return (
     <Box sx={{ display: "flex", flexDirection: "column", paddingBottom: "20px"}}>
-      <Box sx={{ display: "flex" }}>
+      <Box sx={{ display: "flex", margin: "auto" }}>
         <Typography sx={{ paddingRight: "10px"}}>
           Github:
         </Typography>

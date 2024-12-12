@@ -32,7 +32,7 @@ const Descriptions: React.FC<Props> = ({
         <Box className={styles.entryDot}></Box>
       </Box>
       <Box className={styles.description}>
-        <Box sx={{ display: "flex"}}>
+        <Box className={styles.descHeader}>
           <Projects projects={projects} />
 
           <List sx={{ paddingTop: "0px", }}>
@@ -53,7 +53,7 @@ const Descriptions: React.FC<Props> = ({
               Common:
             </Typography>
             {common.map((tech, index) => (
-              <ListItem key={index} sx={{ padding: "0px", }}>
+              <ListItem key={index} sx={{ padding: "0px" }}>
                 <ListItemIcon sx={{ minWidth: "20px" }}>
                   <FiberManualRecordIcon sx={{ fontSize: "10px" }} color="primary" />
                 </ListItemIcon>
@@ -102,7 +102,7 @@ type CompanyProps = {
 
 const Company: React.FC<CompanyProps> = ({ period, company, position }) => {
   return (
-    <Box>
+    <Box className={styles.company}>
       <Typography>{period}</Typography>
       {Array.from(company).map(([key, value], index) => (
         <Box key={index}>
@@ -126,12 +126,12 @@ type ProjectsProps = {
 
 const Projects: React.FC<ProjectsProps> = ({projects}) => {
   return (
-    <List sx={{width: "210px", minWidth: "210px", paddingTop: "0px"}}>
+    <List className={styles.projects}>
       <Typography>
         Projects:
       </Typography>
       {Array.from(projects).map(([key, value], index) => (
-        <ListItem key={index} sx={{ padding: "0px", }}>
+        <ListItem key={index} sx={{ padding: "0px" }}>
           <ListItemIcon sx={{ minWidth: "20px" }}>
             <FiberManualRecordIcon sx={{ fontSize: "10px" }} color="primary" />
           </ListItemIcon>
