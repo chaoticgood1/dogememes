@@ -35,7 +35,7 @@ const Descriptions: React.FC<Props> = ({
         <Box sx={{ display: "flex"}}>
           <Projects projects={projects} />
 
-          <List>
+          <List sx={{ paddingTop: "0px", }}>
             <Typography>
               Summary:
             </Typography>
@@ -126,7 +126,7 @@ type ProjectsProps = {
 
 const Projects: React.FC<ProjectsProps> = ({projects}) => {
   return (
-    <List sx={{width: "210px", minWidth: "210px"}}>
+    <List sx={{width: "210px", minWidth: "210px", paddingTop: "0px"}}>
       <Typography>
         Projects:
       </Typography>

@@ -1,9 +1,12 @@
 import React from 'react';
 import Descriptions from './descriptions';
+import { Typography } from '@mui/material';
+import { Box } from '@mui/system';
 
 export default function Portfolio() {
 
   return <div className='timeline'>
+    <BodyHeader />
     <IamTech />
     <GlobalX />
     <GameDevAlice />
@@ -12,6 +15,22 @@ export default function Portfolio() {
     <Indigo />
   </div>;
 }
+
+const BodyHeader: React.FC = () => {
+  return (
+    <Box sx={{ display: "flex", flexDirection: "column", paddingBottom: "20px"}}>
+      <Box sx={{ display: "flex" }}>
+        <Typography sx={{ paddingRight: "10px"}}>
+          Github:
+        </Typography>
+        <a href="https://github.com/chaoticgood1" target="_blank">Link</a>
+      </Box>
+    </Box>
+    
+  )
+}
+
+
 
 const IamTech: React.FC = () => {
   const period = "July 2024 - Dec 2024"
