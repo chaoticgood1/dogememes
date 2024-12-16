@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from "./Index.module.scss";
-import { Box, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material';
-import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
+import { Box, Typography } from '@mui/material';
 import CircleIcon from '@mui/icons-material/Circle';
 
 type Props = {
@@ -135,25 +134,6 @@ const Company: React.FC<CompanyProps> = ({ period, company, position }) => {
       ))}
       
       <Typography>{position}</Typography>
-    </Box>
-  )
-}
-
-
-type ProjectsProps = {
-  projects: string[]
-}
-
-const Projects: React.FC<ProjectsProps> = ({projects}) => {
-  return (
-    <Box className={styles.projects}>
-      <Typography>
-        Projects:
-      </Typography>
-      <Typography>
-        <CircleIcon className={styles.bullet} color="primary" />
-        {projects.join(', ')}
-      </Typography>
     </Box>
   )
 }
