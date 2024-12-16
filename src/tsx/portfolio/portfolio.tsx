@@ -8,11 +8,11 @@ export default function Portfolio() {
   return <div className='timeline'>
     <BodyHeader />
     <IamTech />
-    {/* <GlobalX />
+    <GlobalX />
     <GameDevAlice />
     <Katanatechworks />
     <Hilsoft />
-    <Indigo /> */}
+    <Indigo />
   </div>;
 }
 
@@ -30,8 +30,6 @@ const BodyHeader: React.FC = () => {
   )
 }
 
-
-
 const IamTech: React.FC = () => {
   const period = "July 2024 - Dec 2024"
   const company = new Map([["IamTech", ""]])
@@ -44,19 +42,13 @@ const IamTech: React.FC = () => {
   ])
   
   const summary = "Lead team of 5 developers handling 4 projects, first three projects are online betting system using SigePay as payment system"
-  const languages = [
-    "Typescript"
-  ]
+  const languages = ["Typescript", "Python"]
   const backend = [
     "NodeJS", "Fastify", "FastAPI", "Swagger", "MySQL", "SQLite", "PostgreSQL",
     "Nginx", "Apache"
   ]
-  const frontend = [
-    "ReactJS", "Material UI", "Zustand"
-  ]
-  const others = [
-    "Jest", "SuperTest", "Phaser", "Uecs", "SigePay"
-  ]
+  const frontend = ["ReactJS", "Material UI", "Zustand"]
+  const others = ["Jest", "SuperTest", "Phaser", "Uecs", "SigePay"]
   return (
     <Descriptions
       period={period}
@@ -76,32 +68,24 @@ const GlobalX: React.FC = () => {
   const period = "March 2024 - July 2024"
   const company = new Map([["GlobalX PH", "http://globalx.com.ph/"]])
   const position = "Fullstack Web and Game Developer"
-  const projects = new Map([
-    ["Karera", "https://dev.karera.live/"],
-  ])
+  const projects = new Map([["Karera", "https://dev.karera.live/"]])
   
-  const summaries = [
-    "Developed system from scratch, focused on Zodiac Race",
-  ]
-  const common = [
-    "Typescript", "Jest", "Grafana"
-  ]
-  const backend = [
-    "NodeJS", "Fastify", "Uecs", "MySQL", "SQLite",
-  ]
-  const frontend = [
-    "ReactJS", "Mui", "Uecs", "Zustand", "Phaser", "PlayWright"
-  ]
+  const summary = "Developed system from scratch, focused on Zodiac Race"
+  const languages = ["Typescript"]
+  const backend = ["NodeJS", "Fastify", "Uecs", "MySQL", "SQLite", "Nginx", "Apache"]
+  const frontend = ["ReactJS", "Mui", "Zustand"]
+  const others = ["Jest", "Grafana", "PlayWright", "Phaser", "Uecs"]
   return (
     <Descriptions
       period={period}
       company={company}
       position={position}
       projects={projects}
-      summaries={summaries}
-      common={common}
+      summary={summary}
+      languages={languages}
       backend={backend}
       frontend={frontend}
+      others={others}
     />
   )
 }
@@ -110,32 +94,26 @@ const GameDevAlice: React.FC = () => {
   const period = "Sept 2020 - Oct 2023"
   const company = new Map([["GameDevAlice", "https://github.com/gamedevalice"]])
   const position = "3D Game Developer"
-  const projects = new Map([
-    ["Ironverse", "/ironverse"],
-  ])
+  const projects = new Map([["Ironverse", "/ironverse"]])
   
-  const summaries = [
-    "Have built lots of proprietary prototypes, the link above is the only open-source we created using WASM.",
-  ]
-  const common = [
-    "Rust", "Javascript", "Bevy Engine", "Tokio", "Voxel", "Shader", "Multi-threading"
-  ]
+  const summary = "Have built lots of proprietary prototypes, the link above is the only open-source we created using WASM."
+  const languages = ["Rust", "Javascript"]
   const backend = [
-    "Cargo", "PostgreSQL", "Game Physics", "MySQL", "SQLite",
+    "Bevy Engine", "Cargo", "Tokio", "PostgreSQL", "Game Physics", "MySQL", "SQLite",
   ]
-  const frontend = [
-    "WGSL", "WASM", "Web Worker"
-  ]
+  const frontend = ["WGSL", "WASM", "Web Worker"]
+  const others = ["Voxel", "Shader", "Multi-threading"]
   return (
     <Descriptions
       period={period}
       company={company}
       position={position}
       projects={projects}
-      summaries={summaries}
-      common={common}
+      summary={summary}
+      languages={languages}
       backend={backend}
       frontend={frontend}
+      others={others}
     />
   )
 }
@@ -150,28 +128,22 @@ const Katanatechworks: React.FC = () => {
     ["TCC Inc.", "https://tccinc.com/"],
   ])
   
-  const summaries = [
-    "I learned a lot here about web development.",
-  ]
-  const common = [
-    "Javascript", "Wordpress", "Magento 2", "Postman", "Laravel", 
-  ]
-  const backend = [
-    "PHP", "MySQL/MariaDB"
-  ]
-  const frontend = [
-    "Cypress", "Google Analytics"
-  ]
+  const summary = "I learned a lot here about web development."
+  const languages = ["Javascript", "PHP", "C#"]
+  const backend = ["MySQL/MariaDB"]
+  const frontend = ["Cypress", "Google Analytics"]
+  const others = ["Wordpress", "Magento 2", "Postman", "Laravel", ]
   return (
     <Descriptions
       period={period}
       company={company}
       position={position}
       projects={projects}
-      summaries={summaries}
-      common={common}
+      summary={summary}
+      languages={languages}
       backend={backend}
       frontend={frontend}
+      others={others}
     />
   )
 }
@@ -180,32 +152,24 @@ const Hilsoft: React.FC = () => {
   const period = "July 2016 - March 2017"
   const company = new Map([["Hilsoft Inc.", "https://www.hilsoftinc.com/"]])
   const position = "Java Developer"
-  const projects = new Map([
-    ["ERP System", ""],
-  ])
+  const projects = new Map([["ERP System", ""]])
   
-  const summaries = [
-    "Part of team developed ERP system development for CBTL and CWC",
-  ]
-  const common = [
-    "Java"
-  ]
-  const backend = [
-    "JEJB", "Struts", "MySQL", "Apache Ant"
-  ]
-  const frontend = [
-    "HTML", "Jaspersoft", "iReport"
-  ]
+  const summary = "Part of team developed ERP system development for CBTL and CWC"
+  const languages = ["Java"]
+  const backend = ["JEJB", "Struts", "MySQL", "Apache Ant"]
+  const frontend = ["HTML", "CSS"]
+  const others = ["Jaspersoft", "iReport"]
   return (
     <Descriptions
       period={period}
       company={company}
       position={position}
       projects={projects}
-      summaries={summaries}
-      common={common}
+      summary={summary}
+      languages={languages}
       backend={backend}
       frontend={frontend}
+      others={others}
     />
   )
 }
@@ -225,26 +189,22 @@ const Indigo: React.FC = () => {
     ["PGBC Game Lad Blitz", "https://www.numuki.com/game/pgbc-game-lad-blitz/"],
   ])
   
-  const summaries = [
-    "I started my career as a Game Developer, we worked for Cartoon Network and Nickelodeon.",
-  ]
-  const common = [
-    "Haxe", "Flambe", "Mercurial", "Android"
-  ]
-  const backend = ["Java"]
-  const frontend = [
-    "HTML", "Flash", "OpenFL"
-  ]
+  const summary = "I started my career as a Game Developer, we worked for Cartoon Network and Nickelodeon."
+  const languages = ["Haxe", "Java"]
+  const backend = ["Flambe", "OpenFL"]
+  const frontend = ["HTML", "CSS", "Flash"]
+  const others = ["Mercurial", "Android"]
   return (
     <Descriptions
       period={period}
       company={company}
       position={position}
       projects={projects}
-      summaries={summaries}
-      common={common}
+      summary={summary}
+      languages={languages}
       backend={backend}
       frontend={frontend}
+      others={others}
     />
   )
 }
