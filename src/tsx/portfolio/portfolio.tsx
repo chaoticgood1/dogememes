@@ -8,11 +8,11 @@ export default function Portfolio() {
   return <div className='timeline'>
     <BodyHeader />
     <IamTech />
-    <GlobalX />
+    {/* <GlobalX />
     <GameDevAlice />
     <Katanatechworks />
     <Hilsoft />
-    <Indigo />
+    <Indigo /> */}
   </div>;
 }
 
@@ -37,23 +37,25 @@ const IamTech: React.FC = () => {
   const company = new Map([["IamTech", ""]])
   const position = "CTO"
   const projects = new Map([
-    ["Kingfisher", ""], 
-    ["HorseRace", ""], 
-    ["MegaPerya", ""], 
-    ["Atlas", ""], 
+    ["Kingfisher", "https://dev.kingfisher777.com/"],
+    ["HorseRace", "https://dev.goldenace67.com/"],
+    ["MegaPerya", ""],
+    ["Atlas", ""],
   ])
   
-  const summaries = [
-    "Create online betting games and eKYC"
-  ]
-  const common = [
-    "Typescript", "Jest", "Supertest"
+  const summary = "Lead team of 5 developers handling 4 projects, first three projects are online betting system using SigePay as payment system"
+  const languages = [
+    "Typescript"
   ]
   const backend = [
-    "NodeJS", "Fastify", "Uecs", "SigePay", "MySQL", "SQLite", "PostgreSQL",
+    "NodeJS", "Fastify", "FastAPI", "Swagger", "MySQL", "SQLite", "PostgreSQL",
+    "Nginx", "Apache"
   ]
   const frontend = [
-    "ReactJS", "Mui", "Zustand", "Phaser"
+    "ReactJS", "Material UI", "Zustand"
+  ]
+  const others = [
+    "Jest", "SuperTest", "Phaser", "Uecs", "SigePay"
   ]
   return (
     <Descriptions
@@ -61,10 +63,11 @@ const IamTech: React.FC = () => {
       company={company}
       position={position}
       projects={projects}
-      summaries={summaries}
-      common={common}
+      summary={summary}
+      languages={languages}
       backend={backend}
       frontend={frontend}
+      others={others}
     />
   )
 }

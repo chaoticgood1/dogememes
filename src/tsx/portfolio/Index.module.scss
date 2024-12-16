@@ -30,7 +30,7 @@
 
 .descHeader {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
 }
 
 .descHeader > * {
@@ -47,9 +47,22 @@
 }
 
 .projects {
+  padding: 0px !important;
+}
+
+.bullet {
+  font-size: 10px !important;
+  margin-right: 10px;
+}
+
+.rowDesc {
   width: 210px;
   min-width: 210px;
-  padding: 0px !important;
+}
+
+.row {
+  display: flex;
+  margin-bottom: 10px;
 }
 
 @media (max-width: 767px) {

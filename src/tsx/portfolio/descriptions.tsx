@@ -2,27 +2,30 @@ import React from 'react';
 import styles from "./Index.module.scss";
 import { Box, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material';
 import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
+import CircleIcon from '@mui/icons-material/Circle';
 
 type Props = {
   period: string,
   company: Map<string, string>,
   position: string,
   projects: Map<string, string>,
-  summaries: string[],
-  common: string[],
+  summary: string,
+  languages: string[],
   backend: string[],
   frontend: string[],
+  others: string[],
 };
 
 const Descriptions: React.FC<Props> = ({
   period, 
   company,
   position, 
-  projects, 
-  summaries, 
-  common, 
+  projects,
+  summary, 
+  languages, 
   backend, 
-  frontend
+  frontend,
+  others
 }) => {
   return (
     <Box className={styles.timeline}>
@@ -32,63 +35,80 @@ const Descriptions: React.FC<Props> = ({
         <Box className={styles.entryDot}></Box>
       </Box>
       <Box className={styles.description}>
-        <Box className={styles.descHeader}>
-          <Projects projects={projects} />
-
-          <List sx={{ paddingTop: "0px", }}>
-            <Typography>
-              Summary:
-            </Typography>
-            {summaries.map((tech, index) => (
-              <ListItem key={index} sx={{ padding: "0px", }}>
-                <ListItemText primary={`${tech}`} sx={{ margin: "0px", pl: 2}}/>
-              </ListItem>
-            ))}
-          </List>
+        <Box className={styles.row}>
+          <Typography className={styles.rowDesc}>
+            Projects: 
+          </Typography>
+          <Box>
+          {Array.from(projects).map(([key, value], index) => (
+            <Box key={index}>
+              {value === "" ? (
+                <Typography>
+                  <CircleIcon className={styles.bullet} color="primary" />
+                  {key}
+                </Typography>
+              ) : (
+                <Box>
+                  <CircleIcon className={styles.bullet} color="primary" />
+                  <a href={value} target="_blank">{key}</a>
+                </Box>
+                
+              )}
+            </Box>
+          ))}
+          </Box>
         </Box>
 
-        <Box sx={{ display: "flex"}}>
-          <List className={styles.list}>
-            <Typography>
-              Common:
-            </Typography>
-            {common.map((tech, index) => (
-              <ListItem key={index} sx={{ padding: "0px" }}>
-                <ListItemIcon sx={{ minWidth: "20px" }}>
-                  <FiberManualRecordIcon sx={{ fontSize: "10px" }} color="primary" />
-                </ListItemIcon>
-                <ListItemText primary={tech} sx={{ margin: "0px", }}/>
-              </ListItem>
-            ))}
-          </List>
-          <List className={styles.list}>
-            <Typography>
-              Backend:
-            </Typography>
-            {backend.map((tech, index) => (
-              <ListItem key={index} sx={{ padding: "0px", }}>
-                <ListItemIcon sx={{ minWidth: "20px" }}>
-                  <FiberManualRecordIcon sx={{ fontSize: "10px" }} color="primary" />
-                </ListItemIcon>
-                <ListItemText primary={tech} sx={{ margin: "0px", }}/>
-              </ListItem>
-            ))}
-          </List>
-          <List className={styles.list}>
-            <Typography>
-              Frontend:
-            </Typography>
-            {frontend.map((tech, index) => (
-              <ListItem key={index} sx={{ padding: "0px", }}>
-                <ListItemIcon sx={{ minWidth: "20px" }}>
-                  <FiberManualRecordIcon sx={{ fontSize: "10px" }} color="primary" />
-                </ListItemIcon>
-                <ListItemText primary={tech} sx={{ margin: "0px", }} />
-              </ListItem>
-            ))}
-          </List>
+        <Box className={styles.row}>
+          <Typography className={styles.rowDesc}>
+            Summary: 
+          </Typography>
+          <Typography>
+            {summary}
+          </Typography>
         </Box>
-        
+
+        <Box className={styles.row}>
+          <Typography className={styles.rowDesc}>
+            Programming Language:
+          </Typography>
+          <Box>
+            {languages.map((key) => (
+              <Typography>
+                <CircleIcon className={styles.bullet} color="primary" />
+                {key}
+              </Typography>
+            ))}
+          </Box>
+        </Box>
+
+        <Box className={styles.row}>
+          <Typography className={styles.rowDesc}>
+            Backend:
+          </Typography>
+          <Typography>
+            {backend.join(", ")}
+          </Typography>
+        </Box>
+
+        <Box className={styles.row}>
+          <Typography className={styles.rowDesc}>
+            Frontend:
+          </Typography>
+          <Typography>
+            {frontend.join(", ")}
+          </Typography>
+        </Box>
+
+        <Box className={styles.row}>
+          <Typography className={styles.rowDesc}>
+            Others:
+          </Typography>
+          <Typography>
+            {others.join(", ")}
+          </Typography>
+        </Box>
+
       </Box>
     </Box>
   )
@@ -121,28 +141,20 @@ const Company: React.FC<CompanyProps> = ({ period, company, position }) => {
 
 
 type ProjectsProps = {
-  projects: Map<string, string>
+  projects: string[]
 }
 
 const Projects: React.FC<ProjectsProps> = ({projects}) => {
   return (
-    <List className={styles.projects}>
+    <Box className={styles.projects}>
       <Typography>
         Projects:
       </Typography>
-      {Array.from(projects).map(([key, value], index) => (
-        <ListItem key={index} sx={{ padding: "0px" }}>
-          <ListItemIcon sx={{ minWidth: "20px" }}>
-            <FiberManualRecordIcon sx={{ fontSize: "10px" }} color="primary" />
-          </ListItemIcon>
-          {value === "" ? (
-            <ListItemText primary={key} sx={{ margin: "0px", }}/>
-          ) : (
-            <a href={value} target="_blank">{key}</a>
-          )}
-        </ListItem>
-      ))}
-    </List>
+      <Typography>
+        <CircleIcon className={styles.bullet} color="primary" />
+        {projects.join(', ')}
+      </Typography>
+    </Box>
   )
 }
 
