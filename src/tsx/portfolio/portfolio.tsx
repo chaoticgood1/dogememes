@@ -7,7 +7,7 @@ export default function Portfolio() {
 
   return <div className='timeline'>
     <BodyHeader />
-    <IamTech />
+    <Confidential />
     <GlobalX />
     <GameDevAlice />
     <Katanatechworks />
@@ -30,9 +30,9 @@ const BodyHeader: React.FC = () => {
   )
 }
 
-const IamTech: React.FC = () => {
+const Confidential: React.FC = () => {
   const period = "July 2024 - Dec 2024"
-  const company = new Map([["IamTech", ""]])
+  const company = new Map([["Confidential", ""]])
   const position = "CTO"
   const projects = new Map([
     ["Kingfisher", "https://dev.kingfisher777.com/"],
