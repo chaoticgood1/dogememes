@@ -25,7 +25,7 @@
 }
 
 .description {
-  padding: 0px 50px;
+  padding: 0px 25px;
 }
 
 .descHeader {
@@ -42,7 +42,7 @@
 }
 
 .company {
-  text-align: center;
+  text-align: left;
   padding-bottom: 20px;
 }
 
@@ -72,6 +72,10 @@
     .entryDot {
       display: none;
     }
+  }
+
+  .company {
+    text-align: center;
   }
 }
 

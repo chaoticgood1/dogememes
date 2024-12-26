@@ -21,7 +21,7 @@ export default function InteractiveList() {
       paddingTop: 0,
       borderRight: '1px solid white',
       height: '100vh',
-      marginRight: 5,
+      marginRight: 1,
     }}>
       <List sx={{
         padding: 0,
