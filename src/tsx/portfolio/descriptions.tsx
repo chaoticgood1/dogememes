@@ -43,12 +43,12 @@ const Descriptions: React.FC<Props> = ({
             <Box key={index}>
               {value === "" ? (
                 <Typography>
-                  <CircleIcon className={styles.bullet} color="primary" />
+                  {/* <CircleIcon className={styles.bullet} color="primary" /> */}
                   {key}
                 </Typography>
               ) : (
                 <Box>
-                  <CircleIcon className={styles.bullet} color="primary" />
+                  {/* <CircleIcon className={styles.bullet} color="primary" /> */}
                   <a href={value} target="_blank">{key}</a>
                 </Box>
                 
@@ -69,12 +69,12 @@ const Descriptions: React.FC<Props> = ({
 
         <Box className={styles.row}>
           <Typography className={styles.rowDesc}>
-            Programming Language:
+            Languages:
           </Typography>
           <Box>
             {languages.map((key) => (
               <Typography>
-                <CircleIcon className={styles.bullet} color="primary" />
+                {/* <CircleIcon className={styles.bullet} color="primary" /> */}
                 {key}
               </Typography>
             ))}
