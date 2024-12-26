@@ -33,7 +33,7 @@ const BodyHeader: React.FC = () => {
 const Confidential: React.FC = () => {
   const period = "July 2024 - Dec 2024"
   const company = new Map([["Confidential", ""]])
-  const position = "CTO"
+  const position = "Senior Software Engineer"
   const projects = new Map([
     ["Kingfisher", "https://dev.kingfisher777.com/"],
     ["HorseRace", "https://dev.goldenace67.com/"],
