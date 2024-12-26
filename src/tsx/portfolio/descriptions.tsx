@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from "./Index.module.scss";
 import { Box, Typography } from '@mui/material';
-import CircleIcon from '@mui/icons-material/Circle';
+// import CircleIcon from '@mui/icons-material/Circle';
 
 type Props = {
   period: string,
