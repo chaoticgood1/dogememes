@@ -35,13 +35,13 @@ const Confidential: React.FC = () => {
   const company = new Map([["Confidential", ""]])
   const position = "Senior Software Engineer"
   const projects = new Map([
-    ["Kingfisher", "https://dev.kingfisher777.com/"],
-    ["HorseRace", "https://dev.goldenace67.com/"],
+    ["Kingfisher", "https://kingfisher777.com/"],
+    ["HorseRace", "https://goldenace67.com/"],
     ["MegaPerya", ""],
     ["Atlas", ""],
   ])
   
-  const summary = "Lead team of 5 developers handling 4 projects, first three projects are online betting system using SigePay as payment system"
+  const summary = "Mobile first application, lead team of 5 developers handling 4 projects, first three projects are online betting system using SigePay as payment system"
   const languages = ["Typescript", "Python"]
   const backend = [
     "NodeJS", "Fastify", "FastAPI", "Swagger", "MySQL", "SQLite", "PostgreSQL",
@@ -68,9 +68,9 @@ const GlobalX: React.FC = () => {
   const period = "March 2024 - July 2024"
   const company = new Map([["GlobalX PH", "http://globalx.com.ph/"]])
   const position = "Fullstack Web and Game Developer"
-  const projects = new Map([["Karera", "https://dev.karera.live/"]])
+  const projects = new Map([["Karera", "https://karera.live/"]])
   
-  const summary = "Developed system from scratch, focused on Zodiac Race"
+  const summary = "Mobile first application, developed an online betting system from scratch, with custom game Zodiac Race"
   const languages = ["Typescript"]
   const backend = ["NodeJS", "Fastify", "Uecs", "MySQL", "SQLite", "Nginx", "Apache"]
   const frontend = ["ReactJS", "Mui", "Zustand"]
@@ -193,7 +193,7 @@ const Indigo: React.FC = () => {
   const languages = ["Haxe", "Java"]
   const backend = ["Flambe", "OpenFL"]
   const frontend = ["HTML", "CSS", "Flash"]
-  const others = ["Mercurial", "Android"]
+  const others = ["Mercurial", "Git", "Android"]
   return (
     <Descriptions
       period={period}
