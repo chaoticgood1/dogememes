@@ -7,6 +7,7 @@ export default function Portfolio() {
 
   return <div className='timeline'>
     <BodyHeader />
+    <PlayAsia />
     <Confidential />
     <GlobalX />
     <GameDevAlice />
@@ -29,6 +30,38 @@ const BodyHeader: React.FC = () => {
     
   )
 }
+
+
+const PlayAsia: React.FC = () => {
+  const period = "March 2025 - Present"
+  const company = new Map([["PlayAsia", ""]])
+  const position = "Backend Developer"
+  const projects = new Map([
+    ["Confidential", ""],
+  ])
+  
+  const summary = "Developing a confidential mobile app in relation to gamer community"
+  const languages = ["Rust"]
+  const backend = [
+    "Poem", "PostgreSQL", "Keycloak"
+  ]
+  const frontend = []
+  const others = ["Docker", "Hurl.dev", "Bruno"]
+  return (
+    <Descriptions
+      period={period}
+      company={company}
+      position={position}
+      projects={projects}
+      summary={summary}
+      languages={languages}
+      backend={backend}
+      frontend={frontend}
+      others={others}
+    />
+  )
+}
+
 
 const Confidential: React.FC = () => {
   const period = "July 2024 - Dec 2024"
