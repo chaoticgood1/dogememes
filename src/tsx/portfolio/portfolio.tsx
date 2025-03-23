@@ -45,7 +45,7 @@ const PlayAsia: React.FC = () => {
   const backend = [
     "Poem", "PostgreSQL", "Keycloak"
   ]
-  const frontend = []
+  const frontend = [""]
   const others = ["Docker", "Hurl.dev", "Bruno"]
   return (
     <Descriptions
