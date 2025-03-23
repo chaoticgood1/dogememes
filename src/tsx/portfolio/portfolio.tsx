@@ -37,10 +37,10 @@ const PlayAsia: React.FC = () => {
   const company = new Map([["PlayAsia", ""]])
   const position = "Backend Developer"
   const projects = new Map([
-    ["Confidential", ""],
+    ["", ""],
   ])
   
-  const summary = "Developing a confidential mobile app in relation to gamer community"
+  const summary = "Developing a super secret mobile app for gamer community :)"
   const languages = ["Rust"]
   const backend = [
     "Poem", "PostgreSQL", "Keycloak"
