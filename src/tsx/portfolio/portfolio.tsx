@@ -7,6 +7,7 @@ export default function Portfolio() {
 
   return <div className='timeline'>
     <BodyHeader />
+    <GlobalX2 />
     <PlayAsia />
     <Confidential />
     <GlobalX />
@@ -31,9 +32,35 @@ const BodyHeader: React.FC = () => {
   )
 }
 
+const GlobalX2: React.FC = () => {
+  const period = "July 2025 - November 2025"
+  const company = new Map([["GlobalX Digital Corporation", "http://globalx.com.ph/"]])
+  const position = "Chief Technology Officer"
+  const projects = new Map([["Dos Letra", "https://dev1.karera.live/"]])
+  
+  const summary = "Created a testable, scalable, PAGCOR compliant iGaming platform"
+  const languages = ["Typescript"]
+  const backend = ["NodeJS", "Fastify", "PostgreSQL", "Drizzle ORM", "Nginx"]
+  const frontend = ["ReactJS", "Mui", "Zustand", "React Native"]
+  const others = ["Vitest", "Playwright", "Grafana k6", "Docker", "Gitlab Actions"]
+  return (
+    <Descriptions
+      period={period}
+      company={company}
+      position={position}
+      projects={projects}
+      summary={summary}
+      languages={languages}
+      backend={backend}
+      frontend={frontend}
+      others={others}
+    />
+  )
+}
+
 
 const PlayAsia: React.FC = () => {
-  const period = "March 2025 - Present"
+  const period = "March 2025 - July 2025"
   const company = new Map([["PlayAsia", ""]])
   const position = "Backend Developer"
   const projects = new Map([
@@ -74,7 +101,7 @@ const Confidential: React.FC = () => {
     ["Atlas", ""],
   ])
   
-  const summary = "Mobile first application, lead team of 5 developers handling 4 projects, first three projects are online betting system using SigePay as payment system"
+  const summary = "Created an iGaming platform, lead team of 5 developers handling 4 projects, first three projects are online betting system using SigePay as payment system"
   const languages = ["Typescript", "Python"]
   const backend = [
     "NodeJS", "Fastify", "FastAPI", "Swagger", "MySQL", "SQLite", "PostgreSQL",
@@ -99,15 +126,15 @@ const Confidential: React.FC = () => {
 
 const GlobalX: React.FC = () => {
   const period = "March 2024 - July 2024"
-  const company = new Map([["GlobalX PH", "http://globalx.com.ph/"]])
+  const company = new Map([["GlobalX Digital Corporation", "http://globalx.com.ph/"]])
   const position = "Fullstack Web and Game Developer"
   const projects = new Map([["Karera", "https://karera.live/"]])
   
-  const summary = "Mobile first application, developed an online betting system from scratch, with custom game Zodiac Race"
+  const summary = "Created iGaming platform from scratch"
   const languages = ["Typescript"]
   const backend = ["NodeJS", "Fastify", "Uecs", "MySQL", "SQLite", "Nginx", "Apache"]
   const frontend = ["ReactJS", "Mui", "Zustand"]
-  const others = ["Jest", "Grafana", "PlayWright", "Phaser", "Uecs"]
+  const others = ["Jest", "Grafana", "Playwright", "Phaser", "Uecs"]
   return (
     <Descriptions
       period={period}
@@ -127,9 +154,9 @@ const GameDevAlice: React.FC = () => {
   const period = "Sept 2020 - Oct 2023"
   const company = new Map([["GameDevAlice", "https://github.com/gamedevalice"]])
   const position = "3D Game Developer"
-  const projects = new Map([["Ironverse", "/ironverse"]])
+  const projects = new Map([["Ironverse", ""]])
   
-  const summary = "Have built lots of proprietary prototypes, the link above is the only open-source we created using WASM."
+  const summary = "Created a 3D game engine using Bevy Engine and WASM, it is a multi-threaded game engine that can run on the web."
   const languages = ["Rust", "Javascript"]
   const backend = [
     "Bevy Engine", "Cargo", "Tokio", "PostgreSQL", "Game Physics", "MySQL", "SQLite",
