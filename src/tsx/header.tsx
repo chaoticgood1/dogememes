@@ -60,7 +60,7 @@ function Header() {
 
           <CardMedia
             component="img"
-            src="icon.jpg"
+            src="me.jpeg"
             id="icon"
           />
           <Typography
