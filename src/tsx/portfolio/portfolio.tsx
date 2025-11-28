@@ -90,7 +90,7 @@ const PlayAsia: React.FC = () => {
 }
 
 const Fyb: React.FC = () => {
-  const period = "March 2025 - July 2025"
+  const period = "May 2025 - July 2025"
   const company = new Map([["Fyb Technologies", "https://fybtechnologies.com/"]])
   const position = "Senior Game Developer"
   const projects = new Map([
