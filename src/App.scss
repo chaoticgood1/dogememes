@@ -3,6 +3,14 @@
   margin: 0 auto;
   padding: 0.5rem;
   text-align: center;
+
+  @media (min-width: 1200px) {
+    width: 1200px;
+  }
+
+  // @media (max-width: 1200px) {
+  //   width: 100%;
+  // }
 }
 
 .logo {
@@ -46,6 +54,7 @@
 .concurrency {
   display: none;
 }
+
 
 
 
