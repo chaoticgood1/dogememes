@@ -37,13 +37,13 @@ const GlobalX2: React.FC = () => {
   const period = "July 2025 - November 2025"
   const company = new Map([["GlobalX Digital Corporation", "http://globalx.com.ph/"]])
   const position = "Chief Technology Officer"
-  const projects = new Map([["Dos Letra", "https://dev1.karera.live/"]])
+  const projects = new Map([["Dos Letra", "https://youtu.be/rwNaCZgrcGc"]])
   
   const summary = "Created a testable, scalable, PAGCOR compliant iGaming platform"
   const languages = ["Typescript"]
   const backend = ["NodeJS", "Fastify", "PostgreSQL", "Drizzle ORM", "Nginx"]
   const frontend = ["ReactJS", "Mui", "Zustand", "React Native"]
-  const others = ["Vitest", "Playwright", "Grafana k6", "Docker", "Gitlab Actions"]
+  const others = ["Cursor AI", "Vitest", "Playwright", "Grafana k6", "Docker", "Gitlab Actions"]
   return (
     <Descriptions
       period={period}
@@ -73,7 +73,7 @@ const PlayAsia: React.FC = () => {
     "Poem", "PostgreSQL", "Keycloak"
   ]
   const frontend = [""]
-  const others = ["Docker", "Hurl.dev", "Bruno"]
+  const others = ["Docker", "Hurl.dev", "Bruno", "Cursor AI"]
   return (
     <Descriptions
       period={period}
@@ -99,11 +99,9 @@ const Fyb: React.FC = () => {
   
   const summary = "Created slot games using Phaser and consulted on the system design"
   const languages = ["Typescript/Javascript", "HTML", "CSS"]
-  const backend = [
-    "Poem", "PostgreSQL", "Keycloak"
-  ]
-  const frontend = [""]
-  const others = ["Docker", "Hurl.dev", "Bruno"]
+  const backend = ["NodeJS", "Vitest"]
+  const frontend = ["Phaser", "Typescript", "HTML", "CSS"]
+  const others = ["Cursor AI"]
   return (
     <Descriptions
       period={period}
@@ -124,8 +122,8 @@ const Confidential: React.FC = () => {
   const company = new Map([["Confidential", ""]])
   const position = "Senior Software Engineer"
   const projects = new Map([
-    ["Kingfisher", "https://kingfisher777.com/"],
-    ["HorseRace", "https://goldenace67.com/"],
+    ["Kingfisher", ""],
+    ["HorseRace", ""],
     ["MegaPerya", ""],
     ["Atlas", ""],
   ])
