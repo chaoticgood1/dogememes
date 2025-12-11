@@ -94,7 +94,7 @@ const Fyb: React.FC = () => {
   const company = new Map([["Fyb Technologies", "https://fybtechnologies.com/"]])
   const position = "Senior Game Developer"
   const projects = new Map([
-    ["", ""],
+    ["Prototype 1", "https://dogememes.org/game/"],
   ])
   
   const summary = "Created slot games using Phaser and consulted on the system design"
