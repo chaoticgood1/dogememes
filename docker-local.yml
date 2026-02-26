@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  dogememes:
+    build: .
+    ports:
+      - "8001:5173"
+    volumes:
+      - .:/app
+      - /app/node_modules

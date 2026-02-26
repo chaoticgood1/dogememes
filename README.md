@@ -1,30 +1,48 @@
-# React + TypeScript + Vite
+# Svelte 5 Portfolio Template - A Coastal UI Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[Click Here for Live Demo](https://svelte-5-portfolio.vercel.app/)
 
-Currently, two official plugins are available:
+![Portfolio Preview](static/GitHub.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A modern, sleek portfolio template built with Svelte 5 and Tailwind CSS. Perfect for showcasing your work, experience, and skills in a professional manner.
 
-## Expanding the ESLint configuration
+Join our growing community on [Discord](https://discord.gg/fB5uJYYD8E) for support and feature discussions! Also visit [Coastal UI](https://coastalui.com) to learn more about our components and projects.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Hall of Fame Portfolios
 
-- Configure the top-level `parserOptions` property like this:
+- https://emadev.co/
+- https://www.thomaslap.dev/
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+## Features
+
+The template includes a centralized `portfolioContent` object that manages all your personal information:
+
+- Introduction section with social links
+- Work experience timeline
+- Education history
+- Technical skills showcase
+- Personal projects gallery
+- Interactive component showcase
+
+## Tech Stack
+
+- **Svelte 5** - Leveraging the latest features including runes
+- **Tailwind CSS** - Utility-first styling for modern designs
+- **TypeScript** - Type-safe development
+- **Lucide Icons** - Beautiful, consistent icons
+
+## Getting Started
+
+```bash
+# Clone this template repository
+git clone https://github.com/thomaslappenbusch/svelte-5-portfolio.git
+
+# Navigate to project directory
+cd svelte-5-portfolio
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
 ```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
