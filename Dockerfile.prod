@@ -1,4 +1,4 @@
-FROM node:18-alpine AS base
+FROM node:20-alpine AS base
 
 RUN apk add --no-cache curl
 
@@ -7,7 +7,8 @@ WORKDIR /app
 COPY package*.json ./
 
 FROM base AS dependencies
-RUN npm ci --only=production && npm cache clean --force
+RUN npm ci
+RUN npm cache clean --force
 
 FROM base AS builder
 RUN npm ci
