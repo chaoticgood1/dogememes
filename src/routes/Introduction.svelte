@@ -30,7 +30,7 @@
     <div class="flex items-center space-x-5 sm:space-x-3 mt-6 sm:mt-2">
       <button
         aria-label="X Social Media link"
-        onclick={() => window.open(data.xSocialLink, "_blank")}
+        onclick={() => window.open(data.socials.xSocialLink, "_blank")}
         class="cursor-pointer"
       >
         <svg
@@ -46,7 +46,7 @@
       <div class="h-5 sm:h-3.5 w-[1px] bg-faint/50"></div>
       <button
         aria-label="send an email"
-        onclick={() => (window.location.href = data.emailAddress)}
+        onclick={() => (window.location.href = data.socials.email)}
         class="cursor-pointer"
       >
         <svg
@@ -61,7 +61,7 @@
       <div class="h-5 sm:h-3.5 w-[1px] bg-faint/50"></div>
       <button
         aria-label="LinkedIn Social Media link"
-        onclick={() => window.open(data.linkedInSocialLink, "_blank")}
+        onclick={() => window.open(data.socials.linkedInSocialLink, "_blank")}
         class="cursor-pointer"
       >
         <svg

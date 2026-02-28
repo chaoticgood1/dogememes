@@ -1,5 +1,9 @@
 <script lang="ts">
-  let { data } = $props();
+  export let data: any[];
+
+  function getLogoEntries(logo: any) {
+    return Object.entries(logo) as [string, string][];
+  }
 </script>
 
 <div id="experienceSection" class="flex flex-col justify-start w-full mt-12">
@@ -23,7 +27,7 @@
               <div class="text-primary text-xl font-semibold">
                 {experience.company}
               </div>
-              <div class="text-faint text-sm">
+              <div class="font-semibold text-gray-400 text-sm">
                 {experience.role}
               </div>
             </div>
@@ -35,6 +39,37 @@
               {/if}
               {experience.duration}
             </div>
+          </div>
+          <div class="text-faint text-sm">
+            {experience.description}
+          </div>
+          {#if experience.links}
+          <div class="flex flex-wrap gap-2 mt-2">
+            {#each Object.entries(experience.links) as [linkName, linkUrl]}
+              <a 
+                href={`${linkUrl}`} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                class="text-sm text-blue-400 hover:text-blue-300 underline"
+              >
+                {linkName}
+              </a>
+            {/each}
+          </div>
+          {/if}
+          <div class="flex flex-wrap gap-2 mt-2">
+            {#each getLogoEntries(experience.logo) as [imageKey, techName]}
+              <div class="flex items-center gap-1 rounded px-2 py-1 bg-[#1F1F1F]">
+                {#if imageKey}
+                <img
+                  src={`${imageKey}`}
+                  alt={techName}
+                  class="h-4 w-4"
+                />
+              {/if}
+                <span class="text-xs text-gray-400">{techName}</span>
+              </div>
+            {/each}
           </div>
         </div>
       </div>
