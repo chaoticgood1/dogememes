@@ -5,6 +5,5 @@ import { defineConfig } from "vite";
 export default defineConfig({
   plugins: [sveltekit(), tailwindcss()],
   preview: {
-    allowedHosts: ["dogememes.org"],
   },
 });
