@@ -132,7 +132,7 @@
         company: "GameDevAlice",
         role: "Full Stack/3D Game Developer",
         duration: "Sep 2020 – Oct 2023",
-        image: "playasia.jpeg",
+        image: "gamedevalice.png",
         logo: {
           "rust.png": "Rust",
           "javascript.png": "Javascript",
