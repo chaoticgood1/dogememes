@@ -12,7 +12,7 @@
       name: "Monico A. Colete",
       occupation: "",
       description: "I always think the universe is a simulation running on a computer.",
-      avatar: "avatar.jpeg",
+      avatar: "badger.jpeg",
       socials: {
         xSocialLink: "https://x.com/MonicoColete",
         email: "mailto:colete_nico@yahoo.com",
@@ -22,6 +22,27 @@
       },
     },
     experiences: [
+      {
+        company: "Sikat Tech Inc.",
+        role: "Senior Software Engineer",
+        duration: "April 2026 – September 2026",
+        image: "sikat-tech.png",
+        logo: {
+          "node.js.png": "Node.js",
+          "postgresql.png": "PostgreSQL",
+          "drizzleorm.png": "Drizzle ORM",
+          "nginx.png": "Nginx",
+          "reactjs.png": "ReactJS",
+          "vitest.png": "Vitest",
+          "docker.png": "Docker",
+          "github.png": "Github Actions",
+          "gcp.png": "Google Cloud Platform",
+          "gspanner.png": "Google Spanner",
+          "terraform.png": "Terraform",
+          "effect.png": "Effect-TS",
+        },
+        description: "DevOps and led few devs to kickstart an accounting based application"
+      },
       {
         company: "GlobalX Digital Corporation",
         role: "Chief Technology Officer",
