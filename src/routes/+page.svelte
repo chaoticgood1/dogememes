@@ -44,13 +44,25 @@
         description: "DevOps and led few devs to kickstart an accounting based application"
       },
       {
+        company: "Beyondfore",
+        role: "3D Game Developer",
+        duration: "June 2026 – July 2026",
+        image: "",
+        links: {
+          "King of Defenders 2": "https://kingofdefenders2.com/",
+        },
+        logo: {
+          "node.js.png": "Node.js",
+          "docker.png": "Docker",
+          "threejs.png": "ThreeJS"
+        },
+        description: "Created a 3D sequel of King of Defenders"
+      },
+      {
         company: "GlobalX Digital Corporation",
         role: "Chief Technology Officer",
         duration: "July 2025 – Nov 2025",
         image: "",
-        links: {
-          "Karera Demo": "https://youtu.be/rwNaCZgrcGc",
-        },
         logo: {
           "node.js.png": "Node.js",
           "fastify.png": "Fastify",
