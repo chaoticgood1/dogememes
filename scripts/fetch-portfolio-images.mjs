@@ -2,7 +2,8 @@
 /**
  * One-off helper: download a preview image for each portfolio entry.
  *
- *   npm run portfolio:images
+ *   npm run portfolio:images            # every target
+ *   npm run portfolio:images sikat-tech # only the named slugs
  *
  * Files land in `static/previews/` and are committed to the repo, so this
  * script never runs during `vite build` / `docker build`. Re-run it only when
@@ -116,9 +117,18 @@ async function download(provider, url) {
 async function main() {
   await mkdir(OUT_DIR, { recursive: true });
 
+  const only = process.argv.slice(2);
+  const targets = only.length
+    ? TARGETS.filter((target) => only.includes(target.slug))
+    : TARGETS;
+
+  if (targets.length === 0) {
+    throw new Error(`No target matched: ${only.join(", ")}`);
+  }
+
   const results = [];
 
-  for (const target of TARGETS) {
+  for (const target of targets) {
     let saved = null;
     let lastError = null;
 
@@ -149,7 +159,7 @@ async function main() {
     }
   }
 
-  console.log("\nImage paths to use in portfolioContent.portfolio:");
+  console.log("\nImage paths to use in src/lib/data/portfolio.ts:");
   for (const result of results) {
     console.log(
       `  ${result.slug.padEnd(26)} ${result.file ? `/previews/${result.file}` : '""'}`,

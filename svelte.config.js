@@ -13,8 +13,15 @@ const config = {
     // See https://svelte.dev/docs/kit/adapters for more information about adapters.
     adapter: adapter(),
     prerender: {
-      entries: ['*']
-    }
+      entries: ["*"],
+      // A portfolio card without a screenshot is not a broken build: the card
+      // component falls back to a gradient tile. Without this handler a missing
+      // file in static/previews/ fails `npm run build` during prerender.
+      handleHttpError: ({ status, path, message }) => {
+        if (status === 404 && path.startsWith("/previews/")) return;
+        throw new Error(message);
+      },
+    },
   },
 };
 
