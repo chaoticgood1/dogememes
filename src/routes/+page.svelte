@@ -5,6 +5,8 @@
   import Skills from "./Skills.svelte";
   import PersonalProjects from "./PersonalProjects.svelte";
   import Gallery from "./Gallery.svelte";
+  import Portfolio from "./Portfolio.svelte";
+  import { featuredPortfolio } from "$lib/data/portfolio";
   import Button1 from "$lib/components/Button1.svelte";
 
   const portfolioContent: any = {
@@ -48,9 +50,6 @@
         role: "3D Game Developer",
         duration: "June 2026 – July 2026",
         image: "",
-        links: {
-          "King of Defenders 2": "https://kingofdefenders2.com/",
-        },
         logo: {
           "node.js.png": "Node.js",
           "docker.png": "Docker",
@@ -104,9 +103,6 @@
         role: "Senior Game Developer",
         duration: "May 2025 – July 2025",
         image: "fyb.jpeg",
-        links: {
-          "Slot Game Prototype": "https://dogememes.org/game/",
-        },
         logo: {
           "typescript.png": "Typescript",
           "phaser.png": "Phaser",
@@ -183,10 +179,6 @@
         role: "Full Stack Developer",
         duration: "Apr 2017 – Sep 2020",
         image: "katana.jpeg",
-        links: {
-          "PB Dionisio Website": "https://www.pbdionisio.com/shop/",
-          "TCC Website": "https://tccinc.com/",
-        },
         logo: {
           "php.png": "PHP",
           "javascript.png": "Javascript",
@@ -217,14 +209,6 @@
         role: "Game Developer",
         duration: "Sep 2014 – Jul 2016",
         image: "indigo.jpeg",
-        links: {
-          "TMNT Deck'd Out": "https://www.numuki.com/game/tmnt-deck-d-out",
-          "Mr. Bean Skidding": "https://plays.org/mr-bean-bean-skidding/",
-          "Alvin and the Chipmunks": "https://www.qgames.org/game/alvin-and-the-chipmunks-taking-center-stage.html",
-          "Nick Dance Machine": "https://www.numuki.com/game/nick-dance-machine",
-          "Fairly Odd Parents": "https://www.numuki.com/game/fop-wishing-101",
-          "PGBC Game Lad Blitz": "https://www.numuki.com/game/pgbc-game-lad-blitz/"
-        },
         logo: {
           "haxe.png": "Haxe",
           "java.png": "Java",
@@ -276,6 +260,7 @@
   >
     <Introduction data={portfolioContent.introduction} />
     <Experience data={portfolioContent.experiences} />
+    <Portfolio data={featuredPortfolio} showMoreHref="/portfolio" />
     <!-- <Education data={portfolioContent.education} />
     <Skills data={portfolioContent.skills} />
     <div
