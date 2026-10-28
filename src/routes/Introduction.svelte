@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { ArrowRightIcon } from "lucide-svelte";
+
   let { data } = $props();
 </script>
 
@@ -25,6 +27,13 @@
       <div class="flex flex-col items-center sm:items-start sm:ml-4 w-full">
         <div class="text-primary text-3xl">{data.name}</div>
         <div class="text-faint text-sm sm:-mt-[2px]">{data.occupation}</div>
+        <a
+          href="/portfolio"
+          class="mt-4 inline-flex items-center gap-2 px-3 py-2 rounded-md border border-background-tertiary bg-background-secondary text-secondary text-sm font-medium transition hover:bg-background-tertiary hover:text-primary"
+        >
+          Portfolio
+          <ArrowRightIcon class="h-4 w-4" strokeWidth={1.5} />
+        </a>
       </div>
     </div>
     <div class="flex items-center space-x-5 sm:space-x-3 mt-6 sm:mt-2">

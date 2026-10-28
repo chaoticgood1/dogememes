@@ -26,6 +26,8 @@ const TIMEOUT_MS = 20_000;
 const MIN_BYTES = 2_000;
 
 const TARGETS = [
+  // sikat.com does not answer on the apex host, so the www host is used.
+  { slug: "sikat-tech", url: "https://www.sikat.com/" },
   { slug: "king-of-defenders-2", url: "https://kingofdefenders2.com/" },
   { slug: "slot-game-prototype", url: "https://dogememes.org/game/" },
   { slug: "pb-dionisio", url: "https://www.pbdionisio.com/shop/" },
