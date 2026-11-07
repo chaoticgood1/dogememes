@@ -52,7 +52,7 @@
           /></svg
         >
       </button>
-      <button
+      <!-- <button
         aria-label="X Social Media link"
         onclick={() => window.open(data.socials.xSocialLink, "_blank")}
         class="cursor-pointer"
@@ -66,7 +66,7 @@
             d="M389.2 48h70.6L305.6 224.2L487 464H345L233.7 318.6L106.5 464H35.8l164.9-188.5L26.8 48h145.6l100.5 132.9zm-24.8 373.8h39.1L151.1 88h-42z"
           /></svg
         >
-      </button>
+      </button> -->
       <div class="h-5 sm:h-3.5 w-[1px] bg-faint/50"></div>
       <button
         aria-label="send an email"

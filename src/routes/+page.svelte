@@ -16,7 +16,6 @@
       description: "I always think the universe is a simulation running on a computer.",
       avatar: "badger.jpeg",
       socials: {
-        xSocialLink: "https://x.com/MonicoColete",
         email: "mailto:colete_nico@yahoo.com",
         linkedInSocialLink: "https://www.linkedin.com/in/monico-colete-1b22691a3",
         github: "https://github.com/chaoticgood1",
